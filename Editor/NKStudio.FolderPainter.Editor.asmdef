@@ -1,0 +1,16 @@
+{
+    "name": "NKStudio.FolderPainter.Editor",
+    "rootNamespace": "NKStudio.FolderPainter",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

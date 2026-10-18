@@ -1,0 +1,24 @@
+/* Shared style of every Folder Painter window, inspector and settings page (see FPElements.ApplyTheme). */
+
+/* Hand cursor on everything that can be clicked */
+.unity-button,
+.unity-toolbar-button,
+.unity-toolbar-toggle,
+.unity-toolbar-menu,
+.unity-base-popup-field__input,
+.unity-enum-field__input,
+.unity-toggle__input,
+.unity-object-field__selector,
+.unity-list-view__reorderable-handle,
+.fp-clickable {
+    cursor: link;
+}
+
+/* Disabled elements keep the default cursor */
+.unity-button:disabled,
+.unity-toolbar-toggle:disabled,
+.unity-base-popup-field__input:disabled,
+.unity-toggle:disabled .unity-toggle__input,
+.fp-clickable:disabled {
+    cursor: arrow;
+}

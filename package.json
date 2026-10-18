@@ -1,0 +1,22 @@
+{
+  "name": "com.nkstudio.folderpainter",
+  "displayName": "Folder Painter",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "description": "Colors and icons for folders in the Project window. This build is ported to Unity 6 (EntityId tree views) with a UI Toolkit configuration popup, a UI Toolkit ruleset inspector and English / Korean localization.",
+  "keywords": [
+    "editor",
+    "project window",
+    "folders",
+    "icons",
+    "colors"
+  ],
+  "author": {
+    "name": "NK Studio",
+    "url": "https://github.com/NK-Studio"
+  },
+  "license": "Apache-2.0 AND CC-BY-NC-4.0",
+  "documentationUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter#readme",
+  "changelogUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter/blob/main/Third%20Party%20Notices.md"
+}

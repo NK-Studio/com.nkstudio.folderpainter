@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Internal tooling and design sources (kept locally, not published)
+Tools~/
+Art~/
