@@ -42,7 +42,7 @@ Editor/
 ├─ UI/            공용 UI Toolkit 요소, FPFonts (UI 폰트)
 │  ├─ Windows/    폴더 설정 팝업, 텍스처 선택 창
 │  └─ Inspector/  룰셋 인스펙터, 규칙 드로어
-├─ Textures/      내장 아이콘, 배경, 에디터 텍스처 (코드에 내장된 PNG)
+├─ Textures/      Type / Platform 아이콘(PNG), 코드로 그리는 색상·태그·투명 아이콘, 배경, 에디터 텍스처
 ├─ Images/        UI 이미지 에셋 (예: Close.png)
 ├─ Fonts/         UI 폰트: IBM Plex Sans KR 서브셋 (Regular, Bold) + OFL.txt
 └─ Utility/       로그, 색상, 에셋 도우미, 패키지 정보
@@ -51,8 +51,9 @@ Editor/
 ## 라이선스
 
 - 코드: Apache License 2.0 (`LICENSE.md`). Borodar의 Rainbow Folders 2를 기반으로 합니다.
-- Rainbow Folders 2의 내장 아트워크 (폴더 색상, 태그, 배경, 에디터 텍스처): CC BY-NC 4.0 —
-  **상업적 이용은 할 수 없습니다.** Type과 Platform 아이콘은 NK Studio가 새로 그렸습니다.
+- 아트워크: Rainbow Folders 2의 아트워크(CC BY-NC 4.0)는 포함하지 않습니다. 색상·태그·투명 폴더 아이콘, 색상 배경,
+  에디터 텍스처는 NK Studio가 코드로 그리고 (`ProceduralTextures.cs`, 자체 팔레트), Type과 Platform 아이콘은
+  NK Studio가 그렸습니다. 코드와 같이 Apache License 2.0을 따르며 상업적으로 이용할 수 있습니다.
 - 폰트: IBM Plex Sans KR 서브셋, SIL Open Font License 1.1 (`Editor/Fonts/OFL.txt`).
 
 자세한 내용은 `Third Party Notices.md`를 참고하세요.

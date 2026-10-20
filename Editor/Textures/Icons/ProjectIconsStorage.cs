@@ -35,7 +35,15 @@ namespace NKStudio.FolderPainter
         /// </summary>
         public static Tuple<Texture2D, Texture2D> GetIcons(ProjectIcon type)
         {
-            return StorageHelper.GetTextures(type, FilterMode.Bilinear, ICON_STRINGS, ICON_TEXTURES);
+            if (!ProceduralTextures.IsProcedural(type))
+                return StorageHelper.GetTextures(type, FilterMode.Bilinear, ICON_STRINGS, ICON_TEXTURES);
+
+            // Cached textures could have been destroyed (e.g. by an editor tool unloading assets)
+            if (ICON_TEXTURES.TryGetValue(type, out var pair) && pair.Item1 != null && pair.Item2 != null) return pair;
+
+            pair = ProceduralTextures.CreateIcons(type);
+            ICON_TEXTURES[type] = pair;
+            return pair;
         }
 
         public static Texture2D GetIcon(ProjectIcon type, bool small)

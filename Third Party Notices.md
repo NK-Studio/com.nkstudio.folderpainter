@@ -18,17 +18,17 @@ Files based on it carry a notice at their top. Main changes made by NK Studio:
 - English / Korean localization with pluggable language packs;
 - rule lookup fixes and performance improvements (see `CHANGELOG.md`).
 
-### Artwork — Creative Commons Attribution-NonCommercial 4.0 International
+### Artwork
 
-The built-in icons, backgrounds and editor textures embedded in `Editor/Textures/**` come from Rainbow Folders 2
-and are licensed under CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/).
-**This artwork may not be used for commercial purposes.**
+Folder Painter contains no Rainbow Folders 2 artwork (which is licensed under CC BY-NC 4.0):
 
-Changes made by NK Studio:
+- the color (`Clr*`), tag (`Tag*`) and transparent (`Transparent*`) folder icons, the color row backgrounds and
+  the editor textures (folder edit icon, preview gradients, project tree lines, filter / delete / settings buttons)
+  are drawn in code by NK Studio (`Editor/Textures/ProceduralTextures.cs`) with its own palette;
+- the Type (`Tpe*`, `TpeBg*`) and Platform (`Pfm*`, `PfmBg*`) icons were drawn by NK Studio;
+- the Rainbow Folders logo icon (`TpeRainbow`) was removed.
 
-- the 24 color folder icons and the matching row backgrounds (`Clr*`) were recolored;
-- the Rainbow Folders logo icon (`TpeRainbow`) was removed;
-- the Type (`Tpe*`, `TpeBg*`) and Platform (`Pfm*`, `PfmBg*`) icons were redrawn by NK Studio.
+This artwork is part of the package and covered by the Apache License 2.0, like the code.
 
 ## IBM Plex Sans KR
 

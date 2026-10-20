@@ -15,8 +15,13 @@
 - Every Folder Painter window, the ruleset inspector and the settings page use the bundled "Folder Painter Sans KR"
   font (IBM Plex Sans KR subset, Regular + Bold). Characters outside the subset fall back to the editor fonts.
 - The popup close button uses `Editor/Images/Close.png`, tinted to the editor skin.
-- The 24 color folder icons and matching row backgrounds were harmonized: more even lightness and saturation,
-  slightly better spaced hues, yellows kept bright.
+- The color, tag and transparent folder icons and the color row backgrounds are now drawn in code
+  (`ProceduralTextures`) with a new NK Studio palette (OKLCH, even lightness and chroma, yellows kept bright)
+  instead of embedded Rainbow Folders 2 PNGs. Tags are rounded squares with a gap around them.
+- The editor textures (folder edit icon, preview gradients, project tree lines, filter / delete / settings buttons)
+  are drawn in code as well. The package no longer contains Rainbow Folders 2 artwork (CC BY-NC 4.0), so it is
+  covered by the Apache License 2.0 (fonts: SIL Open Font License 1.1). The unused `IcnFoldoutFirst` and
+  `IcnFoldoutLast` textures were removed.
 - The Type and Platform icons were redrawn.
 - Removed the small folder row under the popup preview; clickable elements show a hand cursor.
 - Icon tooltips no longer show the enum prefixes ("Tpe Editor" → "Editor", "Red (Tag)", "Scripts (BG)").

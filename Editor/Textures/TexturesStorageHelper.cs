@@ -19,25 +19,6 @@ namespace NKStudio.FolderPainter
         // Public
         //---------------------------------------------------------------------
 
-        public static Texture2D GetTexture(T type, FilterMode filterMode, Dictionary<T, Lazy<string>> strings, Dictionary<T, Texture2D> textures)
-        {
-            // Cached textures could have been destroyed (e.g. by an editor tool unloading assets)
-            if (textures.TryGetValue(type, out var texture) && texture != null) return texture;
-
-            if (strings.TryGetValue(type, out var lazyString))
-            {
-                texture = TextureFromString(lazyString.Value, filterMode);
-            }
-            else
-            {
-                texture = Texture2D.grayTexture;
-                FPLogger.LogWarning($"Cannot find texture with ID: {type}");
-            }
-
-            textures[type] = texture;
-            return texture;
-        }
-
         /// <summary>
         /// Returns null for an unknown id, e.g. an icon removed from the package but still referenced by an old
         /// ruleset: the folder then keeps its default icon. The warning is logged only once per id.
