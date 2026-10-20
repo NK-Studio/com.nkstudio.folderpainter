@@ -26,6 +26,7 @@ namespace NKStudio.FolderPainter
             {"Import", "가져오기"},
             {"Export", "내보내기"},
             {"Version", "버전"},
+            {"Documentation", "문서"},
             {"No ruleset found in the project.", "프로젝트에서 룰셋을 찾을 수 없습니다."},
 
             // Popups

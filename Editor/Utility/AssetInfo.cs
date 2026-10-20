@@ -12,14 +12,16 @@ namespace NKStudio.FolderPainter
         /// <summary>Asset path of the package root (Unity uses the package name, not the folder name on disk).</summary>
         public const string PACKAGE_PATH = "Packages/com.nkstudio.folderpainter";
 
-        // Rainbow Folders release this package was ported from: its documentation still applies
-        private const string BASE_VERSION = "2.4.2";
-        public const string HELP_URL = "http://www.borodar.com/stuff/rainbowfolders/docs/quickstart_v" + BASE_VERSION + ".pdf";
+        public const string DOCS_URL = "https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/manual/index.html";
+        public const string HELP_URL = "https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/manual/rulesets.html";
+
+        // Shown when the package info cannot be read (e.g. the code was copied into Assets)
+        private const string FALLBACK_VERSION = "1.0.0";
 
         private static string _version;
 
         /// <summary>Version declared in package.json.</summary>
         public static string Version =>
-            _version ??= PackageInfo.FindForAssembly(typeof(AssetInfo).Assembly)?.version ?? BASE_VERSION;
+            _version ??= PackageInfo.FindForAssembly(typeof(AssetInfo).Assembly)?.version ?? FALLBACK_VERSION;
     }
 }

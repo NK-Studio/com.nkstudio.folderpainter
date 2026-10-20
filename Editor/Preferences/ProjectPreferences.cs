@@ -178,9 +178,19 @@ namespace NKStudio.FolderPainter
             // Version
 
             root.Add(new VisualElement {style = {flexGrow = 1}});
+
+            var docsLink = new Label(Tr("Documentation"))
+            {
+                tooltip = AssetInfo.DOCS_URL,
+                style = {unityTextAlign = TextAnchor.MiddleCenter, fontSize = 11, marginTop = 10, color = new Color(0.35f, 0.62f, 1f)}
+            };
+            docsLink.AddToClassList(FPElements.CLICKABLE_CLASS);
+            docsLink.RegisterCallback<ClickEvent>(_ => Application.OpenURL(AssetInfo.DOCS_URL));
+            root.Add(docsLink);
+
             root.Add(new Label($"{Tr("Version")} {AssetInfo.Version}")
             {
-                style = {unityTextAlign = TextAnchor.MiddleCenter, opacity = 0.6f, fontSize = 10, marginTop = 10, marginBottom = 6}
+                style = {unityTextAlign = TextAnchor.MiddleCenter, opacity = 0.6f, fontSize = 10, marginTop = 4, marginBottom = 6}
             });
         }
 

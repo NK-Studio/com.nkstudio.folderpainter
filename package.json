@@ -16,7 +16,7 @@
     "url": "https://github.com/NK-Studio"
   },
   "license": "Apache-2.0 AND OFL-1.1",
-  "documentationUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter#readme",
-  "changelogUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/NK-Studio/com.nkstudio.folderpainter/blob/main/Third%20Party%20Notices.md"
+  "documentationUrl": "https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/manual/index.html",
+  "changelogUrl": "https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/changelog/CHANGELOG.html",
+  "licensesUrl": "https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/license/License.html"
 }

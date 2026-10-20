@@ -4,6 +4,8 @@ Unity 프로젝트 창의 폴더에 색상과 아이콘을 입히는 에디터 �
 [Rainbow Folders 2](https://github.com/Borod4r/Rainbow-Folders-2)를 Unity 6으로 포팅하고, UI Toolkit 기반의 설정 팝업과
 룰셋 인스펙터, 영어 / 한국어 현지화를 더했습니다.
 
+📖 **문서**: [English](https://nk-studio.github.io/Packages/com.nkstudio.folderpainter@1.0/manual/index.html) · [한국어](https://nk-studio.github.io/kr/Packages/com.nkstudio.folderpainter@1.0/manual/index.html)
+
 ## 설치
 
 Package Manager → **+** → **Install package from git URL...** 에 아래 주소를 입력합니다.
